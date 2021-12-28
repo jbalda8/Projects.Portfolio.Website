@@ -1,0 +1,547 @@
+/*
+ TITLE: Index Style
+ AUTHOR: Joshua Balda (JAB)
+ PURPOSE: Style Index Page
+ Date: 11/15/2021
+ MODIFICATION HISTORY:
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background: #000;
+	min-height: 200vh;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding: 40px 100px;
+	z-index: 100000;
+}
+
+nav .logo {
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s;
+}
+
+nav.sticky {
+	padding: 5px 20px;
+	padding-right: 100px;
+	background: #062d3b;
+}
+
+nav ul {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+nav ul li {
+	position: relative;
+	list-style: none;
+}
+
+nav ul li a {
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 2px;
+	font-weight: 500px;
+	transition: 0.6s;
+}
+
+.banner {
+	position: relative;
+	width: 100%;
+	height: 850px;
+	background-color: #5ca5cc;
+	background-size: cover;
+}
+
+nav.sticky .logo,
+nav.sticky ul li a {
+	color: white;
+}
+
+#home {
+	padding-bottom: 500px;
+	background-color: aqua;
+}
+
+#aboutMe {
+	padding-bottom: 175px;
+	background-color: #E8E8E8;
+}
+
+#skills {
+	padding-bottom: 500px;
+	background-color: #5ca5cc;
+}
+
+#portfolio {
+	padding-bottom: 1000px;
+	background-color: #E8E8E8;
+}
+
+#contact {
+	padding-bottom: 200px;
+	background-color: #062d3b;
+}
+
+#dummy1,
+#dummy2,
+#dummy3 {
+	margin-top: -62px;
+}
+
+#aboutMe,
+#skills,
+#portfolio {
+	margin-top: 62px;
+}
+
+.navToggle {
+	position:absolute;
+	cursor: pointer;
+	margin: 2px 1rem;
+	right: 15px;
+	top: 8px;
+}
+
+img {
+	display: flex;
+	align-items: center;
+	width: 40px;
+}
+
+#navCheckbox {
+	display: none;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: center;
+}
+
+li:first-child {
+	margin-right: auto;
+}
+
+li {
+	list-style: none;
+	display: none;
+}
+
+li:first-child {
+	display: block;
+}
+
+#navCheckbox:checked ~ ul.menu li {
+	display: block;
+}
+
+@media only screen and (min-width:1028px) {
+		.navToggle {
+			display:none
+		}
+
+		.menu {
+			flex-direction: row;
+		}
+
+		li {
+			display: block;
+		}
+}
+
+
+@media only screen and (max-width: 550px) {
+	#logo {
+	  font-size: 35px;
+	}
+	.navToggle {
+		top: 3px;
+	}
+	#dummy1,
+    #dummy2,
+    #dummy3 {
+	margin-top: -50px;
+}
+
+    #aboutMe,
+	#skills,
+    #portfolio {
+	margin-top: 50px;
+}
+
+    img {
+        width: 40px;
+    }
+
+  }
+
+@media only screen and (max-width: 460px) {
+	#logo {
+	  font-size: 30px;
+	}
+	.navToggle {
+		top: 2px;
+	}
+	img {
+		width: 35px;
+	}
+	#dummy1,
+    #dummy2,
+    #dummy3 {
+	margin-top: -43px;
+}
+
+	#aboutMe,
+	#skills,
+	#portfolio {
+	margin-top: 43px;
+}
+  }
+
+@media only screen and (max-width: 415px) {
+	#logo {
+	  font-size: 28px;
+	}
+	.navToggle {
+		top: 2px;
+	}
+	img {
+		width: 33px;
+	}
+	#dummy1,
+    #dummy2,
+    #dummy3 {
+	margin-top: -42px;
+}
+
+	#aboutMe,
+	#skills,
+	#portfolio {
+	margin-top: 42px;
+}
+  }
+
+
+@media only screen and (max-width: 400px) {
+	#logo {
+	  display: none;
+	}
+	nav {
+	    height: 40px;
+	}
+	img {
+		width: 35px;
+	}
+	ul {
+	    padding-top: 150px;
+	}
+	#dummy1,
+    #dummy2,
+    #dummy3 {
+	margin-top: -40px;
+    }
+
+    #aboutMe,
+	#skills,
+    #portfolio {
+	margin-top: 40px;
+    }
+    nav {
+        background: #fff;
+    }
+}
+  
+#selfie {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	height: auto;
+    max-width: 350px;
+    max-height: 350px;
+}
+
+#imgWrapper {
+	padding-top: 200px;
+}
+
+#bannerTitle {
+	font-size: 45px;
+	text-align: center;
+	padding-bottom: min(20px, 2%);
+	padding-top: min(50px, 5%);
+
+}
+
+div#bannerLine {
+	border-bottom: #2ecc71 4px solid;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	height: auto;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+#bannerDesc {
+	text-align: center;
+	padding-top: min(20px, 2%);
+	font-size: 20px;
+}
+
+#bannerTitle,
+#bannerDesc {
+    color: white;
+}
+
+#aboutMeTitle {
+	padding-top: 120px;
+	text-align: center;
+	font-style: bold;
+	font-size: 50px;
+	color: #2ecc71;
+}
+
+#aboutMeLine{
+	border-bottom: #2ecc71 4px solid;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	height: auto;
+    max-width: 350px;
+    max-height: 350px;
+}
+
+#educTitle,
+#intTitle {
+	padding-top: 50px;
+	text-align: center;
+	font-style: bold;
+	font-size: 30px;
+	padding-bottom: 15px;
+	color: #2ecc71;
+}
+
+#educContent {
+	text-align: left;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	height: auto;
+    max-width: 550px;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+#intContent {
+	text-align: left;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	height: auto;
+    max-width: 550px;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+#content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	grid-gap: 1rem;
+	padding: 1rem;
+}
+
+.paragraph {
+	height: 0;
+	padding-bottom: 400px;
+}
+
+@media screen and (max-width: 1200px){
+	#content {
+		grid-template-columns: 1fr;
+		padding: 2rem 50px;
+	}
+	#educContent, #intContent {
+		padding-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 700px){
+	#educContent, #intContent {
+		max-width: 400px;
+		font-size: 2.2vw;
+	}
+	#educTitle, #intTitle {
+		font-size: 4vw;
+	}
+}
+
+.inner {
+	padding-top: 20px;
+}
+
+.skillsTitle {
+	text-align: center;
+	color: #fff;
+	padding: 1rem;
+	position: relative;
+	font-size: 30px;
+	padding-top: 100px;
+}
+
+.skillsTitle:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	height: 4px;
+	width: 450px;
+	background-color: #2ecc71;
+	border-radius: 2px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	grid-gap: 1rem;
+	padding: 1rem;
+}
+
+.skill-box {
+	padding: 1rem;
+	color: #ddd;
+	cursor: pointer;
+}
+
+.skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before {
+	width: 35px;
+}
+
+.skill-box:hover .img{
+	transform: translateY(-10px);
+}
+
+
+.skill-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+	position: relative;
+}
+
+.skill-title:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	width: 0;
+	height: 4px;
+	border-radius: 2px 0 0 2px;
+	background-color: #2ecc71;
+	transition: .5s;
+}
+
+.skill-title:before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 4px;
+	border-radius: 0 2px 2px 0;
+	background-color: #2ecc71;
+	transition: .5s;
+}
+
+.img {
+	width: 90px;
+	height: 90px;
+	position: relative;
+	border-radius: 45px;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+}
+
+.img:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 90px;
+	background: rgba(100, 100, 100, 0.5);
+	border-radius: 45px 0 0 45px;
+
+}
+
+.skill-icon {
+	width: 50px;
+	z-index: 2;
+}
+
+.skill-title h3{
+	color: #fff;
+	margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 990px){
+	.container{
+		grid-template-columns: repeat(2, 1fr);
+		padding: 2rem 50px;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.container{
+		grid-template-columns: 1fr;
+		padding: 2rem 50px;
+	}
+}
+
+.knowledge {
+	color: #062d3b;
+}
