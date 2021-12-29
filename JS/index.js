@@ -70,5 +70,5 @@ $(document).ready(function(){
     $(".logo").on('click', function() {
     window.scrollTo({top: 0, behavior: 'smooth'});
     });
-    });
+});
 

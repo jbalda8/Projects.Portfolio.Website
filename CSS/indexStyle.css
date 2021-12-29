@@ -100,12 +100,11 @@ nav.sticky ul li a {
 }
 
 #portfolio {
-	padding-bottom: 1000px;
+	padding-bottom: 25px;
 	background-color: #E8E8E8;
 }
 
 #contact {
-	padding-bottom: 200px;
 	background-color: #062d3b;
 }
 
@@ -323,7 +322,8 @@ div#bannerLine {
     color: white;
 }
 
-#aboutMeTitle {
+#aboutMeTitle,
+#portfolioTitle {
 	padding-top: 120px;
 	text-align: center;
 	font-style: bold;
@@ -331,7 +331,7 @@ div#bannerLine {
 	color: #2ecc71;
 }
 
-#aboutMeLine{
+#aboutMeLine {
 	border-bottom: #2ecc71 4px solid;
 	display: block;
 	margin-left: auto;
@@ -340,6 +340,17 @@ div#bannerLine {
 	height: auto;
     max-width: 350px;
     max-height: 350px;
+}
+
+#portfolioLine {
+	border-bottom: #2ecc71 4px solid;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	height: auto;
+    max-width: 450px;
+    max-height: 450px;
 }
 
 #educTitle,
@@ -544,4 +555,114 @@ div#bannerLine {
 
 .knowledge {
 	color: #062d3b;
+}
+
+.container-portfolio {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	grid-gap: 1rem;
+	padding: 3rem;
+	padding-left: 400px;
+	padding-right: 400px;
+}
+
+.portfolio-box {
+	padding: 1rem;
+	color: #ddd;
+}
+
+.img-container {
+	width: 290px;
+	height: 390px;
+	position: relative;
+	border-radius: 50px;
+	border: black 4px solid;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+	cursor: pointer;
+}
+
+.portfolio-box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+	position: relative;
+}
+
+.portfolio-icon {
+	width: 150px;
+	z-index: 2;
+}
+
+.img-container:hover {
+	background-color: #2ecc71;
+}
+
+@media screen and (max-width: 1310px){
+	.container-portfolio {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 2rem 50px;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.container-portfolio {
+		grid-template-columns: repeat(1, 1fr);
+		padding: 2rem 50px;
+	}
+}
+
+.contactTitle {
+	text-align: center;
+	color: #fff;
+	padding: 1rem;
+	position: relative;
+	font-size: 30px;
+	padding-top: 20px;
+}
+
+.contact-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	grid-gap: 1rem;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 50px;
+}
+
+.profile-container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	grid-gap: 1rem;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 50px;
+}
+
+.img-profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+	position: relative;
+}
+
+.profile-icon {
+	width: 75px;
+	z-index: 2;
 }
