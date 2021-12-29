@@ -74,7 +74,7 @@ nav ul li a {
 .banner {
 	position: relative;
 	width: 100%;
-	height: 850px;
+	height: 900px;
 	background-color: #5ca5cc;
 	background-size: cover;
 }
@@ -90,12 +90,12 @@ nav.sticky ul li a {
 }
 
 #aboutMe {
-	padding-bottom: 175px;
+	padding-bottom: 275px;
 	background-color: #E8E8E8;
 }
 
 #skills {
-	padding-bottom: 500px;
+	padding-bottom: 250px;
 	background-color: #5ca5cc;
 }
 
