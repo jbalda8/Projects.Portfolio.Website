@@ -125,7 +125,7 @@ nav.sticky ul li a {
 	cursor: pointer;
 	margin: 2px 1rem;
 	right: 15px;
-	top: 8px;
+	top: 15px;
 }
 
 img {
@@ -182,7 +182,7 @@ li:first-child {
 	  font-size: 35px;
 	}
 	.navToggle {
-		top: 3px;
+		top: 10px;
 	}
 	#dummy1,
     #dummy2,
@@ -207,7 +207,7 @@ li:first-child {
 	  font-size: 30px;
 	}
 	.navToggle {
-		top: 2px;
+		top: 8px;
 	}
 	img {
 		width: 35px;
@@ -230,7 +230,7 @@ li:first-child {
 	  font-size: 28px;
 	}
 	.navToggle {
-		top: 2px;
+		top: 4px;
 	}
 	img {
 		width: 33px;
@@ -626,19 +626,19 @@ div#bannerLine {
 	padding: 1rem;
 	position: relative;
 	font-size: 30px;
-	padding-top: 20px;
 }
 
 .contact-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	justify-content: center;
-	align-items: center;
+	align-items: top;
 	text-align: center;
 	grid-gap: 1rem;
 	padding-left: 100px;
 	padding-right: 100px;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
+	padding-top: 30px;
 }
 
 .profile-container{
@@ -647,10 +647,9 @@ div#bannerLine {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	grid-gap: 1rem;
-	padding-left: 100px;
-	padding-right: 100px;
-	padding-bottom: 50px;
+	grid-gap: 10px;
+	padding-left: 150px;
+	padding-right: 150px;
 }
 
 .img-profile {
@@ -663,6 +662,40 @@ div#bannerLine {
 }
 
 .profile-icon {
+	width: 48px;
+}
+
+.img-profile {
 	width: 75px;
-	z-index: 2;
+	height: 75px;
+	border-radius: 40px;
+	border: black 4px solid;
+	background-color: white;
+	align-items: center;
+}
+
+.img-profile:hover {
+	background-color: #868686;
+}
+
+@media screen and (max-width: 1150px){
+	.contact-container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media screen and (max-width: 1150px){
+	.profile-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding-left: 350px;
+		padding-right: 350px;
+	}
+}
+
+.contact-content {
+	color: #5ca5cc;
 }
