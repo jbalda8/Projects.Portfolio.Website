@@ -331,7 +331,8 @@ div#bannerLine {
 	color: #2ecc71;
 }
 
-#aboutMeLine {
+#aboutMeLine,
+#skillsLine {
 	border-bottom: #2ecc71 4px solid;
 	display: block;
 	margin-left: auto;
@@ -426,25 +427,12 @@ div#bannerLine {
 	padding-top: 20px;
 }
 
-.skillsTitle {
+#skillsTitle {
+	padding-top: 120px;
 	text-align: center;
-	color: #fff;
-	padding: 1rem;
-	position: relative;
-	font-size: 30px;
-	padding-top: 100px;
-}
-
-.skillsTitle:after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translate(-50%);
-	height: 4px;
-	width: 450px;
-	background-color: #2ecc71;
-	border-radius: 2px;
+	font-style: bold;
+	font-size: 50px;
+	color: white;
 }
 
 .container {
@@ -642,14 +630,12 @@ div#bannerLine {
 }
 
 .profile-container{
-	display: grid;
+	display: flex;
 	grid-template-columns: repeat(3, 1fr);
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	grid-gap: 10px;
-	padding-left: 150px;
-	padding-right: 150px;
 }
 
 .img-profile {
@@ -686,13 +672,11 @@ div#bannerLine {
 
 @media screen and (max-width: 1150px){
 	.profile-container {
-		display: grid;
+		display: flex;
 		grid-template-columns: repeat(3, 1fr);
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		padding-left: 350px;
-		padding-right: 350px;
 	}
 }
 
