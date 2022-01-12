@@ -622,6 +622,7 @@ div#bannerLine {
 	padding-top: 30px;
 }
 
+
 .profile-container{
 	display: flex;
 	grid-template-columns: repeat(3, 1fr);
@@ -737,5 +738,10 @@ div#bannerLine {
 	width: 45%;
 }
 
+.projectTitle {
+	font-size: 20px;
+	color: black;
+	padding: 10px;
+}
 
 
