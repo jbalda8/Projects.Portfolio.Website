@@ -547,7 +547,7 @@ div#bannerLine {
 
 .container-portfolio {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -594,14 +594,7 @@ div#bannerLine {
 	background-color: #2ecc71;
 }
 
-@media screen and (max-width: 1310px){
-	.container-portfolio {
-		grid-template-columns: repeat(2, 1fr);
-		padding: 2rem 50px;
-	}
-}
-
-@media screen and (max-width: 650px){
+@media screen and (max-width: 1000px){
 	.container-portfolio {
 		grid-template-columns: repeat(1, 1fr);
 		padding: 2rem 50px;
@@ -683,3 +676,66 @@ div#bannerLine {
 .contact-content {
 	color: #5ca5cc;
 }
+
+.outer {
+	border-radius: 10px;
+	background-color: white;
+	height: 25px;
+}
+
+.bar {
+	background-color: #2ecc71;
+	height: 100%;
+	border-radius: 0px;
+	text-align: right;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.percentage {
+	width: 100%;
+	height: 100%;
+	line-height: 25px;
+	padding-right: 5%;
+	color: black;
+}
+
+.wrap {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.first {
+	width: 80%;
+}
+
+.second {
+	width: 60%;
+}
+
+.third {
+	width: 65%;
+}
+
+.fourth {
+	width: 50%;
+}
+
+.fifth {
+	width: 80%;
+}
+
+.sixth {
+	width: 90%;
+}
+
+.seventh {
+	width: 55%;
+}
+
+.eighth {
+	width: 45%;
+}
+
+
+
