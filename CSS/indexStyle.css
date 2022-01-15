@@ -97,6 +97,11 @@ nav.sticky ul li a {
 	display: none;
 }
 
+.href:hover {
+	color:#2ecc71;
+	transition: none;
+}
+
 /* BACKGROUND COLORS AND SECTION HEIGHTS*/
 #home {
 	padding-bottom: 500px;
@@ -655,7 +660,7 @@ div#bannerLine {
 }
 
 .portfolio-icon {
-	width: 200px;
+	width: 300px;
 	z-index: 2;
 }
 
