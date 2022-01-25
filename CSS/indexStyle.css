@@ -620,7 +620,7 @@ div#bannerLine {
 /* PORTFOLIO SECTION */
 .container-portfolio {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -660,7 +660,7 @@ div#bannerLine {
 }
 
 .portfolio-icon {
-	width: 300px;
+	width: 270px;
 	z-index: 2;
 }
 
@@ -669,7 +669,14 @@ div#bannerLine {
 	transition: .75s;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1500px){
+	.container-portfolio {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 2rem 50px;
+	}
+}
+
+@media screen and (max-width: 750px){
 	.container-portfolio {
 		grid-template-columns: repeat(1, 1fr);
 		padding: 2rem 50px;
